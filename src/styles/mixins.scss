@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+
+@mixin displayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin displayFlexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin displayFlexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin baseButton {
+    padding: 10px;
+    background-color: $theme-color-two;
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    &:hover{ 
+        cursor: pointer;
+    }
+}
+
+
+@mixin marginAuto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
